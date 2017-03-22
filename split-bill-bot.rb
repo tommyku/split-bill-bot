@@ -38,7 +38,7 @@ def handle_message(message)
 end
 
 def extract_numbers(text)
-  number_regexp = /(\d+,*\d*.?\d*)/
+  number_regexp = /(\d+,*\d*\.?\d*)/
   numbers = text.scan number_regexp
   bill_candidate = 0
   headcount_candidate = numbers.first.last.to_f

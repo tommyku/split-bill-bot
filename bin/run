@@ -1,1 +1,1 @@
-docker run --restart=always -d split-bill-bot
+docker run --restart=always -d -v $(pwd):/app split-bill-bot ruby split-bill-bot.rb
